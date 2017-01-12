@@ -316,3 +316,9 @@ export default {
 In the above code, we map the `types.GET_PRODUCTS` getter meethod to a local computed property with a name `products`.  
 
 Run `npm run dev` to check that the site is up and running correctly. 
+
+## Troubleshooting
+
+### Running `./node_modules/webpack/bin/webpack.js --config build/webpack.dev.conf.js --watch` completes and exits
+
+Try increasing the [Inotify Watches Limit](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
